@@ -12,8 +12,10 @@ public class CameraController : MonoBehaviour
     public Transform cam;
     public bool firstPerson = true;
     public GameObject player;
+    PlayerController playerController;
     private void Start()
     {
+        playerController = player.GetComponent<PlayerController>();
         cam = transform.GetChild(0);
     }
 
@@ -36,7 +38,7 @@ public class CameraController : MonoBehaviour
         xRotation -= mouseY;
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
         transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
-        if(player.GetComponent<PlayerController>().movementState != 0) GetComponent<Attach>().other.transform.rotation = Quaternion.Euler(0, yRotation, 0);
+        if(playerController.movementState != 0) GetComponent<Attach>().other.transform.rotation = Quaternion.Euler(0, yRotation, 0);
         
         if (Input.GetKeyDown(KeyCode.F5))
         {
