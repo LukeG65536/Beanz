@@ -11,6 +11,7 @@ public class CameraController : MonoBehaviour
     private float yRotation;
     public Transform cam;
     public bool firstPerson = true;
+    public GameObject player;
     private void Start()
     {
         cam = transform.GetChild(0);
@@ -35,7 +36,7 @@ public class CameraController : MonoBehaviour
         xRotation -= mouseY;
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
         transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
-        GetComponent<Attach>().other.transform.rotation = Quaternion.Euler(0, yRotation, 0);
+        if(player.GetComponent<PlayerController>().movementState != 0) GetComponent<Attach>().other.transform.rotation = Quaternion.Euler(0, yRotation, 0);
         
         if (Input.GetKeyDown(KeyCode.F5))
         {

@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float speed;
+    public float rollSpeed;
     public float jumpForce;
     public float gravityPull;
     bool grounded = true;
@@ -29,7 +30,7 @@ public class PlayerController : MonoBehaviour
                 if (Input.GetKey(KeyCode.A)) vel.x = -speed;
                 if (Input.GetKey(KeyCode.D)) vel.x = speed;
                 rb.freezeRotation = false;
-                if (Input.GetKey(KeyCode.Space)) /*rb.AddForce(Vector3.Scale(vel, cam.transform.GetChild(0).forward)*/ rb.AddForce(cam.transform.GetChild(0).forward.normalized);
+                if (Input.GetKey(KeyCode.Space)) /*rb.AddForce(Vector3.Scale(vel, cam.transform.GetChild(0).forward)*/ rb.AddForce(cam.transform.GetChild(0).forward.normalized * rollSpeed);
                 break;
             case 1:
                 if (Input.GetKey(KeyCode.W)) vel.z = speed;
