@@ -279,6 +279,7 @@ MonoBehaviour:
   sens: 5
   cam: {fileID: 0}
   firstPerson: 1
+  player: {fileID: 2120121403}
 --- !u!54 &646682464
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -517,9 +518,9 @@ GameObject:
   - component: {fileID: 2120121407}
   - component: {fileID: 2120121406}
   - component: {fileID: 2120121405}
-  - component: {fileID: 2120121404}
   - component: {fileID: 2120121409}
   - component: {fileID: 2120121408}
+  - component: {fileID: 2120121410}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -527,29 +528,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!136 &2120121404
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2120121403}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &2120121405
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -628,9 +606,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  rollSpeed: 100
   jumpForce: 350
   gravityPull: 0
-  movementState: 1
+  movementState: 0
   cam: {fileID: 646682461}
 --- !u!54 &2120121409
 Rigidbody:
@@ -659,3 +638,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!136 &2120121410
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120121403}
+  m_Material: {fileID: 13400000, guid: 9f26ea070b3b7b7489b258047d0a6920, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}

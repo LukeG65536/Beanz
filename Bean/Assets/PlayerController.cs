@@ -30,7 +30,9 @@ public class PlayerController : MonoBehaviour
                 if (Input.GetKey(KeyCode.A)) vel.x = -speed;
                 if (Input.GetKey(KeyCode.D)) vel.x = speed;
                 rb.freezeRotation = false;
-                if (Input.GetKey(KeyCode.Space)) /*rb.AddForce(Vector3.Scale(vel, cam.transform.GetChild(0).forward)*/ rb.AddForce(cam.transform.GetChild(0).forward.normalized * rollSpeed);
+                Vector3 dir = cam.transform.GetChild(0).forward.normalized * rollSpeed;
+                dir.y = 0;
+                if (Input.GetKey(KeyCode.Space)) /*rb.AddForce(Vector3.Scale(vel, cam.transform.GetChild(0).forward)*/ rb.AddForce(dir);
                 break;
             case 1:
                 if (Input.GetKey(KeyCode.W)) vel.z = speed;
