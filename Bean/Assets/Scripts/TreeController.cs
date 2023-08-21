@@ -18,8 +18,7 @@ public class TreeController : MonoBehaviour
         if (other.tag == "Player")
         {
             Debug.Log("Hi");
-            gameObject.transform.Translate(0, 5, 5);
-            other.gameObject.GetComponent<PlayerInv>().backPack["Tree Beans"] = 1;
+            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInv>().backPack["Tree Beans"] += 1;
             treeState = 1;
         }
     }
