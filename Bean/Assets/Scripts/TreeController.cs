@@ -10,18 +10,18 @@ public class TreeController : MonoBehaviour
     void Update()
     {
         lifeTime += Time.deltaTime;
-        if(lifeTime > 10)
+        if(20 >= lifeTime && lifeTime >= 10)
         {
             treeState = 1;
-            gameObject.transform.localScale = new Vector3(1, 1, 1) / 2;
-        }else if(lifeTime > 20)
+            gameObject.transform.localScale = new Vector3(1, 1, 1) * 2f;
+        }else if(30 >= lifeTime && lifeTime >= 20)
         {
             treeState = 2;
-            gameObject.transform.localScale = new Vector3(1, 1, 1) / 1.5f;
+            gameObject.transform.localScale = new Vector3(1, 1, 1) * 4f;
         }else if(lifeTime > 30)
         {
             treeState = 3;
-            gameObject.transform.localScale = new Vector3(1, 1, 1);
+            gameObject.transform.localScale = new Vector3(1, 1, 1) * 8f;
         }
         else
         {
