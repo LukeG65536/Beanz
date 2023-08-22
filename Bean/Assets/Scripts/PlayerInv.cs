@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerInv : MonoBehaviour
 {
-    public Dictionary<string, int> backPack;
+    public Dictionary<string, int> backPack = new Dictionary<string, int>();
     public int cash = 0;
     // Start is called before the first frame update
     void Start()
@@ -18,6 +18,6 @@ public class PlayerInv : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

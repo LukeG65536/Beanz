@@ -5,10 +5,10 @@ using UnityEngine.UIElements;
 
 public class TreeController : MonoBehaviour
 {
-    public int treeState = 3;
+    float lifeTime = 0f;
     void Update()
     {
-        
+        lifeTime += Time.deltaTime;
     }
 
 
@@ -18,8 +18,8 @@ public class TreeController : MonoBehaviour
         if (other.tag == "Player")
         {
             Debug.Log("Hi");
-            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInv>().backPack["Tree Beans"] += 1;
-            treeState = 1;
+            other.gameObject.GetComponent<PlayerInv>().backPack["Tree Beans"] += 1;
+            lifeTime = 0f;
         }
     }
 }

@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
                 }
                 else
                 {
-                    if (Input.GetKeyDown(KeyCode.LeftShift))
+                    if (Input.GetKey(KeyCode.LeftShift))
                     {
                         rb.AddForce(cam.transform.GetChild(0).forward.normalized * dashForce, ForceMode.Impulse); 
                         dashCooldown = 3;
@@ -56,10 +56,5 @@ public class PlayerController : MonoBehaviour
                 transform.Translate(vel * Time.deltaTime);
                 break;
         }
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        grounded = true;
     }
 }
