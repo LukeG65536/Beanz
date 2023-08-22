@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
+using UnityEditorInternal;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -39,7 +40,8 @@ public class PlayerController : MonoBehaviour
                 {
                     if (Input.GetKey(KeyCode.LeftShift))
                     {
-                        rb.AddForce(cam.transform.GetChild(0).forward.normalized * dashForce, ForceMode.Impulse); 
+                        rb.velocity = new Vector3(0, rb.velocity.y, 0);
+                        rb.AddForce(cam.transform.GetChild(0).forward.normalized * dashForce, ForceMode.Impulse);
                         dashCooldown = 3;
                     }
                 }
