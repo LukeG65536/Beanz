@@ -35,7 +35,7 @@ public class TreeController : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            if (treeState >= 3) other.gameObject.GetComponent<PlayerInv>().backPack["Tree Beans"] += 1;
+            if (treeState == 3) other.gameObject.GetComponent<PlayerInv>().backPack["Tree Beans"][0] += 1;
             lifeTime = 0f;
             treeState = 0;
         }
