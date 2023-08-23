@@ -7,9 +7,12 @@ public class TreeController : MonoBehaviour
 {
     public float lifeTime = 0f;
     public int treeState = 3;
+    public bool deepFry = false;
+    public Material gold;
+    public Material pure;
     void Update()
     {
-        lifeTime += Time.deltaTime;
+        lifeTime += Time.deltaTime * 5;
         if(20 >= lifeTime && lifeTime >= 10)
         {
             treeState = 1;
@@ -35,7 +38,28 @@ public class TreeController : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            if (treeState == 3) other.gameObject.GetComponent<PlayerInv>().backPack["Tree Beans"][0] += 1;
+            if (treeState == 3)
+            {
+                if (deepFry)
+                {
+                    other.gameObject.GetComponent<PlayerInv>().backPack["Deep Fried Beans"][0] += 1;
+                }
+                else
+                {
+                    other.gameObject.GetComponent<PlayerInv>().backPack["Tree Beans"][0] += 1;
+                }
+            }
+            if(Random.Range(1,11) == 10)
+            {
+                deepFry = true;
+                transform.GetChild(0).GetComponent<MeshRenderer>().material = gold;
+            }
+            else
+            {
+
+                deepFry = false;
+                transform.GetChild(0).GetComponent<MeshRenderer>().material = pure;
+            }
             lifeTime = 0f;
             treeState = 0;
         }
