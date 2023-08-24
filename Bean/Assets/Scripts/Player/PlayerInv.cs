@@ -12,7 +12,8 @@ public class PlayerInv : MonoBehaviour
     {
         backPack["Tree Beans"] = new int[] { 0, 15 };
         backPack["Black Beans"] = new int[] { 0, 10 };
-        backPack["Deep Fried Beans"] = new int[] { 0, 200 };
+        backPack["Beef Beans"] = new int[] { 0, 35 };
+        backPack["Deep Fried Beans"] = new int[] { 0, 250 };
     }
 
     // Update is called once per frame
