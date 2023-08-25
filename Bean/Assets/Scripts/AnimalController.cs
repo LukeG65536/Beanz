@@ -8,6 +8,7 @@ public class AnimalController : MonoBehaviour
     public float health = 100f;
     Rigidbody rb;
     public GameObject player;
+    public ParticleSystem hit;
 
     private void Start()
     {
@@ -36,6 +37,7 @@ public class AnimalController : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            Instantiate(hit, collision.transform.position, Quaternion.identity);
             health -= 20f;
         }
     }
