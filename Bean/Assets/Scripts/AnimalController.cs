@@ -14,6 +14,9 @@ public class AnimalController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         player = GameObject.FindGameObjectWithTag("Player");
+
+        hit =  Instantiate(hit, new Vector3(), Quaternion.identity);
+
     }
     void Update()
     {
@@ -21,7 +24,7 @@ public class AnimalController : MonoBehaviour
 
         if(jumpCount < 0)
         {
-            rb.AddForce(new Vector3(Random.Range(7f, 10f), Random.Range(7f, 10f), Random.Range(7f, 10f)),ForceMode.Impulse);
+            rb.AddForce(new Vector3(Random.Range(5f, 7f), Random.Range(5f, 7f), Random.Range(5f, 7f)),ForceMode.Impulse);
             jumpCount = Random.Range(3f, 6f);
         }
 
@@ -37,7 +40,8 @@ public class AnimalController : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            Instantiate(hit, collision.transform.position, Quaternion.identity);
+            hit.transform.position = collision.transform.position;
+            hit.Play();
             health -= 20f;
         }
     }
