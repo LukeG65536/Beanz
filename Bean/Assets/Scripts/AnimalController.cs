@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.VFX;
 
 public class AnimalController : MonoBehaviour
 {
@@ -9,14 +10,16 @@ public class AnimalController : MonoBehaviour
     Rigidbody rb;
     public GameObject player;
     public ParticleSystem hit;
+    public GameObject blood;
+    VisualEffect bloodEffect;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
         player = GameObject.FindGameObjectWithTag("Player");
 
-        hit =  Instantiate(hit, new Vector3(), Quaternion.identity);
-
+        blood =  Instantiate(blood, new Vector3(), Quaternion.identity);
+        bloodEffect = blood.transform.GetChild(0).GetComponent<VisualEffect>();
     }
     void Update()
     {
@@ -40,7 +43,8 @@ public class AnimalController : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            hit.transform.position = collision.transform.position;
+            blood.transform.position = collision.contacts[0].point;
+            bloodEffect.Play();
             hit.Play();
             health -= 20f;
         }
