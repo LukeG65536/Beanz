@@ -44,12 +44,12 @@ public class CameraController : MonoBehaviour
         {
             if (firstPerson)
             {
-                cam.Translate(0, 0, -3);
+                cam.Translate(0, 0, -5);
                 firstPerson = false;
             }
             else
             {
-                cam.Translate(0, 0, 3);
+                cam.Translate(0, 0, 5);
                 firstPerson = true;
             }
         }
