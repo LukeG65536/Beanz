@@ -19,7 +19,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 724
     y: -190
-    width: 641
+    width: 642
     height: 1567
 --- !u!114 &114350483966674976
 MonoBehaviour:
@@ -56,7 +56,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"r":0.0,"g":0.0,"b":0.0,"a":0.0}'
+      m_SerializableObject: '{"r":0.0,"g":959.900390625,"b":1024.0,"a":1.0}'
     min: -Infinity
     max: Infinity
     enumValues: []
@@ -740,7 +740,7 @@ MonoBehaviour:
   castShadows: 0
   useExposureWeight: 0
   needsOwnSort: 0
-  shaderGraph: {fileID: -5475051401550479605, guid: 6b2111632d0e01f48a9cb2c2feab62e8, type: 3}
+  shaderGraph: {fileID: 4333940904281232215, guid: 6b2111632d0e01f48a9cb2c2feab62e8, type: 3}
   materialSettings:
     m_PropertyNames: []
     m_PropertyValues: []
@@ -1297,7 +1297,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 0.598
+      m_SerializableObject: 0.632
     m_Space: 2147483647
   m_Property:
     name: _ElectricityWidth
@@ -1504,7 +1504,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"x":1.0,"y":1.0}'
+      m_SerializableObject: '{"x":0.0,"y":1.0}'
     m_Space: 2147483647
   m_Property:
     name: _Speed
@@ -1663,7 +1663,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 15
+      m_SerializableObject: 12
     m_Space: 2147483647
   m_Property:
     name: max
@@ -1921,7 +1921,7 @@ MonoBehaviour:
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
   m_UIPosition: {x: 0, y: 0}
-  m_UICollapsed: 1
+  m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots: []
   m_OutputSlots:
@@ -1979,7 +1979,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: 
+      m_SerializableObject: '{"r":0.0,"g":959.900390625,"b":1024.0,"a":1.0}'
     m_Space: 2147483647
   m_Property:
     name: o
