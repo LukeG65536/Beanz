@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.3851598, g: 0.47249484, b: 0.6185883, a: 1}
+  m_IndirectSpecularColor: {r: 0.3851593, g: 0.4724939, b: 0.6185859, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -156,7 +156,7 @@ MonoBehaviour:
   lifeTime: 100
   treeState: 3
   deepFry: 0
-  gold: {fileID: -876546973899608171, guid: 6b2111632d0e01f48a9cb2c2feab62e8, type: 3}
+  gold: {fileID: -876546973899608171, guid: 253443cbcf6dc034f89db9ca1486bbc8, type: 3}
   pure: {fileID: -876546973899608171, guid: 076af710033acad45b6a06a038cc695c, type: 3}
 --- !u!4 &88915436
 Transform:
@@ -979,7 +979,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 85ddfb6c1f804e24796fddc87731c674, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: -876546973899608171, guid: 076af710033acad45b6a06a038cc695c, type: 3}
+      objectReference: {fileID: -876546973899608171, guid: 253443cbcf6dc034f89db9ca1486bbc8, type: 3}
     - target: {fileID: 919132149155446097, guid: 85ddfb6c1f804e24796fddc87731c674, type: 3}
       propertyPath: m_Name
       value: Tree (1)
@@ -1246,7 +1246,7 @@ PrefabInstance:
       objectReference: {fileID: -876546973899608171, guid: 076af710033acad45b6a06a038cc695c, type: 3}
     - target: {fileID: 6265807305413564388, guid: c896559a1386be24dab89eff4ca2435c, type: 3}
       propertyPath: m_Resolution
-      value: 128
+      value: 512
       objectReference: {fileID: 0}
     - target: {fileID: 7643998850757601567, guid: c896559a1386be24dab89eff4ca2435c, type: 3}
       propertyPath: m_RootOrder
