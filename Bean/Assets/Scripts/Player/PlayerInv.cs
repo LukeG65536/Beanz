@@ -27,8 +27,6 @@ public class PlayerInv : MonoBehaviour
             buttons[obj.Key].text = obj.Key + ": " + Math.Round(obj.Value[2]).ToString();
         }
     }
-
-    // Update is called once per frame
     public void resetInv()
     {
         foreach(var item in backPack)

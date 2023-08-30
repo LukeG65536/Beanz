@@ -156,8 +156,8 @@ MonoBehaviour:
   lifeTime: 100
   treeState: 3
   deepFry: 0
-  gold: {fileID: -876546973899608171, guid: 253443cbcf6dc034f89db9ca1486bbc8, type: 3}
-  pure: {fileID: -876546973899608171, guid: 076af710033acad45b6a06a038cc695c, type: 3}
+  gold: {fileID: -876546973899608171, guid: 076af710033acad45b6a06a038cc695c, type: 3}
+  pure: {fileID: 2100000, guid: 1fa6b9ce6c156fa488f4b2f507c3f04f, type: 2}
 --- !u!4 &88915436
 Transform:
   m_ObjectHideFlags: 0
@@ -259,7 +259,7 @@ Terrain:
   m_StaticShadowCaster: 0
   m_IgnoreQualitySettings: 0
   m_ReflectionProbeUsage: 1
-  m_MaterialTemplate: {fileID: 2100000, guid: 687007a0aa0cafa409e55071842bb3b1, type: 2}
+  m_MaterialTemplate: {fileID: -876546973899608171, guid: 8bf37816b8139e74a9d9faeb784e8013, type: 3}
   m_BakeLightProbesForTrees: 1
   m_PreserveTreePrototypeLayers: 0
   m_DeringLightProbesForTrees: 1
@@ -917,7 +917,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -876546973899608171, guid: 864a847a6e03ab547ae2ee86baba7b28, type: 3}
+  - {fileID: -876546973899608171, guid: b1cb94c0f0255f8469bf670c79016990, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1294,7 +1294,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 85ddfb6c1f804e24796fddc87731c674, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: -876546973899608171, guid: 253443cbcf6dc034f89db9ca1486bbc8, type: 3}
+      objectReference: {fileID: 2100000, guid: 1fa6b9ce6c156fa488f4b2f507c3f04f, type: 2}
     - target: {fileID: 919132149155446097, guid: 85ddfb6c1f804e24796fddc87731c674, type: 3}
       propertyPath: m_Name
       value: Tree (1)
