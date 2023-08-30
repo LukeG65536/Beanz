@@ -259,7 +259,7 @@ Terrain:
   m_StaticShadowCaster: 0
   m_IgnoreQualitySettings: 0
   m_ReflectionProbeUsage: 1
-  m_MaterialTemplate: {fileID: -876546973899608171, guid: 8bf37816b8139e74a9d9faeb784e8013, type: 3}
+  m_MaterialTemplate: {fileID: 2100000, guid: 687007a0aa0cafa409e55071842bb3b1, type: 2}
   m_BakeLightProbesForTrees: 1
   m_PreserveTreePrototypeLayers: 0
   m_DeringLightProbesForTrees: 1
@@ -688,7 +688,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -876546973899608171, guid: 8bf37816b8139e74a9d9faeb784e8013, type: 3}
+  - {fileID: -876546973899608171, guid: 253443cbcf6dc034f89db9ca1486bbc8, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -785,7 +785,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1021899591}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -798,7 +798,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -876546973899608171, guid: b1cb94c0f0255f8469bf670c79016990, type: 3}
+  - {fileID: -876546973899608171, guid: 8bf37816b8139e74a9d9faeb784e8013, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -836,7 +836,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1021899591}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.153893, y: 7.596659, z: -2.3865464}
+  m_LocalPosition: {x: 14.13, y: 7.596659, z: -14.27}
   m_LocalScale: {x: 5.3664, y: 5.3664, z: 5.3664}
   m_ConstrainProportionsScale: 0
   m_Children: []
