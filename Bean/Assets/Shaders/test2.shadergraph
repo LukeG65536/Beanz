@@ -965,7 +965,7 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "Smoothness",
     "m_StageCapability": 2,
-    "m_Value": 0.699999988079071,
+    "m_Value": 0.6200000047683716,
     "m_DefaultValue": 0.5,
     "m_Labels": []
 }
@@ -1959,7 +1959,7 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "Metallic",
     "m_StageCapability": 2,
-    "m_Value": 1.0,
+    "m_Value": 2.9600000381469728,
     "m_DefaultValue": 0.0,
     "m_Labels": []
 }

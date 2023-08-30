@@ -17,6 +17,6 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        cashText.text = player.GetComponent<PlayerInv>().cash.ToString();
+        cashText.text = Mathf.Round((float)player.GetComponent<PlayerInv>().cash).ToString();
     }
 }
