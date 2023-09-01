@@ -922,7 +922,8 @@ PrefabInstance:
       value: MOuntains
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: -5568371526223589888, guid: 51a76f7c3c0c6f54786a5b961aa832c5, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: -7029948723529949830, guid: 51a76f7c3c0c6f54786a5b961aa832c5, type: 3}
@@ -1371,8 +1372,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -120, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -203.31934, y: 0}
+  m_SizeDelta: {x: 271.0925, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1948917661
 MonoBehaviour:
@@ -1636,8 +1637,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.000015258789, y: 0}
+  m_SizeDelta: {x: 0.000061035, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2139025782
 MonoBehaviour:
@@ -1744,38 +1745,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1314314417761504373, guid: be7896b47336d82459caeb84c6666c63, type: 3}
-      propertyPath: deepFry
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067897589675464550, guid: be7896b47336d82459caeb84c6666c63, type: 3}
-      propertyPath: m_Size.y
-      value: 2.6633077
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067897589675464550, guid: be7896b47336d82459caeb84c6666c63, type: 3}
-      propertyPath: m_Center.y
-      value: 2.1037095
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067897589675464550, guid: be7896b47336d82459caeb84c6666c63, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5139808073803289033, guid: be7896b47336d82459caeb84c6666c63, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 5.0539894
-      objectReference: {fileID: 0}
-    - target: {fileID: 5139808073803289033, guid: be7896b47336d82459caeb84c6666c63, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 5.0539885
-      objectReference: {fileID: 0}
-    - target: {fileID: 5139808073803289033, guid: be7896b47336d82459caeb84c6666c63, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 163.77954
-      objectReference: {fileID: 0}
-    - target: {fileID: 5139808073803289033, guid: be7896b47336d82459caeb84c6666c63, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.14
-      objectReference: {fileID: 0}
     - target: {fileID: 6318589415777161108, guid: be7896b47336d82459caeb84c6666c63, type: 3}
       propertyPath: m_Name
       value: Tree

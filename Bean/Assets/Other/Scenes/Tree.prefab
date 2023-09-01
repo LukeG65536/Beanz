@@ -48,7 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifeTime: 100
   treeState: 3
-  deepFry: 0
+  deepFry: 1
   gold: {fileID: -876546973899608171, guid: 076af710033acad45b6a06a038cc695c, type: 3}
   pure: {fileID: 2100000, guid: 1fa6b9ce6c156fa488f4b2f507c3f04f, type: 2}
 --- !u!65 &2067897589675464550
@@ -70,8 +70,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.8703429, y: 2.637397, z: 2.105845}
-  m_Center: {x: 0.10151132, y: 1.465466, z: -0.027048176}
+  m_Size: {x: 1.8703429, y: 2.6633077, z: 2.105845}
+  m_Center: {x: 0.10151132, y: 2.1037095, z: -0.027048176}
 --- !u!1001 &4674451963600418338
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -85,12 +85,16 @@ PrefabInstance:
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 85ddfb6c1f804e24796fddc87731c674, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5.0539894
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 85ddfb6c1f804e24796fddc87731c674, type: 3}
       propertyPath: m_LocalScale.y
-      value: 4.4622893
+      value: 5.0539885
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 85ddfb6c1f804e24796fddc87731c674, type: 3}
       propertyPath: m_LocalScale.z
-      value: 144.60493
+      value: 163.77954
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 85ddfb6c1f804e24796fddc87731c674, type: 3}
       propertyPath: m_LocalPosition.x
@@ -98,7 +102,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 85ddfb6c1f804e24796fddc87731c674, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.92
+      value: 0.14
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 85ddfb6c1f804e24796fddc87731c674, type: 3}
       propertyPath: m_LocalPosition.z
