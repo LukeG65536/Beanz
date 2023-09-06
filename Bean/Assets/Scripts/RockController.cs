@@ -9,7 +9,7 @@ public class RockController : MonoBehaviour
     public void hit(PlayerInv inv)
     {
         inv.backPack[type][0] += 1;
-        breakRock();
+        breakRock();//hi
     }
 
     IEnumerator breakRock()
