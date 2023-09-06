@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class RockController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public float breakTime = 2;
+    public string type = "Rock Bean";
+    public void hit(PlayerInv inv)
     {
-        
+        inv.backPack[type][0] += 1;
+        breakRock();
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator breakRock()
     {
-        
+        yield return new WaitForSeconds(breakTime);
+        Destroy(gameObject);
     }
 }

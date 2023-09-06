@@ -20,6 +20,9 @@ public class PlayerInv : MonoBehaviour
         backPack["Black Beans"] = new int[] { 0, 10 };
         backPack["Beef Beans"] = new int[] { 0, 35 };
         backPack["Deep Fried Beans"] = new int[] { 0, 250 };
+        backPack["Rock Beans"] = new int[] { 0, 100 };
+        
+        
         upgrades["Cash Multi"] = new double[] { 1, .35 , 20, 1.2 }; /// {value of upgrade, increase in value, cost, cost increase}
         upgrades["Bean Multi"] = new double[] { 1, .50, 100, 1.5 };
         foreach (GameObject obj in GameObject.FindGameObjectsWithTag("Button")){ buttons[obj.GetComponent<ButtonManager>().index] = obj.transform.GetChild(0).GetComponent<TextMeshProUGUI>(); } ///Dont question it
