@@ -44,13 +44,25 @@ public class CameraController : MonoBehaviour
         {
             if (firstPerson)
             {
-                cam.Translate(0, 0, -5);
+                cam.Translate(0, 1, -5);
                 firstPerson = false;
             }
             else
             {
-                cam.Translate(0, 0, 5);
+                cam.Translate(0, -1, 5);
                 firstPerson = true;
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            Ray ray = new Ray(transform.position, transform.forward);
+            if(Physics.Raycast(ray,out RaycastHit hit, Mathf.Infinity))
+            {
+                if(hit.collider.tag == "Rock")
+                {
+                    hit.collider.GetComponent<RockController>();
+                }
             }
         }
     }
