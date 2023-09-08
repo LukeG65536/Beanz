@@ -38,7 +38,8 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Ints: []
-    m_Floats: []
+    m_Floats:
+    - _QueueControl: 0
     m_Colors:
     - _Color1: {r: 0, g: 1, b: 0.9899883, a: 0}
     - _Color2: {r: 0, g: 1, b: 0.21937847, a: 0}
