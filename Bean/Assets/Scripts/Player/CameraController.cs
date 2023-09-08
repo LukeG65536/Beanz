@@ -54,16 +54,16 @@ public class CameraController : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        /*if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             Ray ray = new Ray(transform.position, transform.forward);
             if(Physics.Raycast(ray,out RaycastHit hit, Mathf.Infinity))
             {
                 if(hit.collider.tag == "Rock")
                 {
-                    hit.collider.GetComponent<RockController>();
+                    hit.collider.GetComponent<RockController>().hit(player.GetComponent<PlayerInv>());
                 }
             }
-        }
+        }*/
     }
 }
