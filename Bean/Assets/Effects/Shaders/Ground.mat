@@ -56,5 +56,7 @@ Material:
     - _SnowMulti: 0.848
     - _TransitionHeight: -21.2
     m_Colors:
+    - _RockMulti: {r: 0.2830189, g: 0.2830189, b: 0.2830189, a: 0}
+    - _RockMultiplyer: {r: 0.21698111, g: 0.21698111, b: 0.21698111, a: 0}
     - _SnowColor: {r: 1, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []
