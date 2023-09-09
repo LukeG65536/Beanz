@@ -41,7 +41,8 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _Scale: 0
-    - _SizeGradiant: 0.075
-    - _TransitionHeight: 0.7
+    - _SizeGradiant: 0.044
+    - _SnowMulti: 0.502
+    - _TransitionHeight: -29.4
     m_Colors: []
   m_BuildTextureStacks: []
