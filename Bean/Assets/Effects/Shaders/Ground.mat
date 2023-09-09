@@ -23,26 +23,38 @@ Material:
   m_Name: Ground
   m_Shader: {fileID: -6465566751694194690, guid: 864a847a6e03ab547ae2ee86baba7b28, type: 3}
   m_Parent: {fileID: -876546973899608171, guid: 864a847a6e03ab547ae2ee86baba7b28, type: 3}
-  m_ModifiedSerializedProperties: 2
+  m_ModifiedSerializedProperties: 18
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2000
   stringTagMap:
     RenderType: Opaque
   disabledShaderPasses: []
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
-    m_TexEnvs: []
+    m_TexEnvs:
+    - _Base:
+        m_Texture: {fileID: 2800000, guid: 67b60be4d89a267438f2458e46af06cd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RockTexture:
+        m_Texture: {fileID: 2800000, guid: 689f4e98299f86f41be81ca759afdcda, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _AlphaClip: 0
+    - _AlphaToMask: 0
     - _QueueControl: 0
+    - _RockTextureMulti: 0.178
     - _Scale: 0
-    - _SizeGradiant: 0.044
-    - _SnowMulti: 0.502
-    - _TransitionHeight: -29.4
-    m_Colors: []
+    - _SizeGradiant: 0.03
+    - _SnowMulti: 0.848
+    - _TransitionHeight: -21.2
+    m_Colors:
+    - _SnowColor: {r: 1, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []
