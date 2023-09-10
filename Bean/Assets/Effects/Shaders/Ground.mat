@@ -23,7 +23,7 @@ Material:
   m_Name: Ground
   m_Shader: {fileID: -6465566751694194690, guid: 864a847a6e03ab547ae2ee86baba7b28, type: 3}
   m_Parent: {fileID: -876546973899608171, guid: 864a847a6e03ab547ae2ee86baba7b28, type: 3}
-  m_ModifiedSerializedProperties: 18
+  m_ModifiedSerializedProperties: 30
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 2
@@ -49,12 +49,15 @@ Material:
     m_Floats:
     - _AlphaClip: 0
     - _AlphaToMask: 0
+    - _DstBlend: 0
     - _QueueControl: 0
     - _RockTextureMulti: 0.178
     - _Scale: 0
     - _SizeGradiant: 0.03
     - _SnowMulti: 0.848
+    - _Surface: 0
     - _TransitionHeight: -21.2
+    - _ZWrite: 1
     m_Colors:
     - _RockMulti: {r: 0.2830189, g: 0.2830189, b: 0.2830189, a: 0}
     - _RockMultiplyer: {r: 0.21698111, g: 0.21698111, b: 0.21698111, a: 0}
