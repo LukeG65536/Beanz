@@ -11,7 +11,7 @@ public class RockController : MonoBehaviour
 
     public void Start()
     {
-        if (Random.Range(0, 2) == 1)
+        if (Random.Range(0, 20) == 1)
         {
             GetComponent<MeshRenderer>().material = gems[Random.Range(0, gems.Length)];
         }
