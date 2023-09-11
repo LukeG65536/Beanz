@@ -5,9 +5,8 @@ using UnityEngine;
 public class MineController : MonoBehaviour
 {
     public GameObject rock;
-    public int[,,] map = new int[1000, 200, 200]; //[layer,x,y]
-    public int mapOffsetX = 100;
-    public int mapOffsetY = 100;
+    public int[,,] map = new int[100, 200, 200]; //[layer,x,y]
+    public int mapOffset = 100;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,9 +26,12 @@ public class MineController : MonoBehaviour
         {
             for (int j = 0; j < 20; j++)
             {
-                GameObject hhh = Instantiate(rock, transform.position + new Vector3(i,depth,j),Quaternion.identity); 
-                hhh.GetComponent<RockController>().localPos = new Vector3(depth, i, j);
-                map[(int)depth, i + 100, j + 100] = 1;
+                GameObject hhh = Instantiate(rock, transform.position + new Vector3(i,depth,j),Quaternion.identity);
+                RockController hh = hhh.GetComponent<RockController>();
+                hh.localPos = new Vector3(depth, i, j);
+                hh.mine = this;
+                
+                map[(int)depth, i + mapOffset, j + mapOffset] = 1;
             }
         }
     }
@@ -39,7 +41,7 @@ public class MineController : MonoBehaviour
         Debug.Log("hiii");
         try
         {
-            map[(int)depth, x + 100, y + 100] = -1;
+            map[(int)depth, x + mapOffset, y + mapOffset] = -1;
         }
         catch
         {
@@ -55,21 +57,23 @@ public class MineController : MonoBehaviour
 
     void smartAdd(int depth, int x, int y)
     {
-        if (depth >= 0 && map[depth, x + 100, y + 100] == -1)
+        if (depth >= 0 && map[depth, x + mapOffset, y + mapOffset] == -1)
         {
-            Debug.Log("smth here");
+            //Debug.Log("smth here");
             return;
         }
         try
         {
-            map[depth, x + 100, y + 100] = 1;
+            map[depth, x + mapOffset, y + mapOffset] = 1;
 
             GameObject ff = Instantiate(rock, transform.position + new Vector3(x, -depth, y), Quaternion.identity);
-            ff.GetComponent<RockController>().localPos = new Vector3(depth, x ,y);
+            RockController f = ff.GetComponent<RockController>();
+            f.localPos = new Vector3(depth, x ,y);
+            f.mine = this;
         }
         catch
         {
-            Debug.Log("nah");
+            //Debug.Log("nah");
         }
     }
 }

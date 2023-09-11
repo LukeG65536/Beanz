@@ -131,3 +131,5 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 5598157a8679ccb488119f533feb2502, type: 2}
   - {fileID: 2100000, guid: 68d22355d9e61b241add7e34fe9cb645, type: 2}
   rock: {fileID: 2100000, guid: 765a0b769f3c02b48b2c40b9dece0713, type: 2}
+  localPos: {x: 0, y: 0, z: 0}
+  mine: {fileID: 0}

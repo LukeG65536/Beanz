@@ -16,9 +16,11 @@ public class PlayerController : MonoBehaviour
     public int movementState = 1;
     public GameObject cam;
     float dashCooldown = 0;
+    public MineController mine;
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        mine = GameObject.FindGameObjectWithTag("Mine").GetComponent<MineController>();
     }
 
     void FixedUpdate()
@@ -58,5 +60,22 @@ public class PlayerController : MonoBehaviour
                 transform.Translate(vel * Time.deltaTime);
                 break;
         }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        GameObject obj = collision.gameObject;
+        if(obj.tag == "Rock")
+        {
+            Vector3 pos = obj.transform.GetComponent<RockController>().localPos;
+            mine.breakRock((int)pos.x, (int) pos.y, (int) pos.z);
+            StartCoroutine(breakRock(obj));
+        }
+    }
+
+    IEnumerator breakRock(GameObject obj)
+    {
+        yield return new WaitForSeconds(1);
+        Destroy(obj);
     }
 }

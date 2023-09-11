@@ -73,11 +73,19 @@ public class PlayerInv : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
-    { 
-        if(collision.collider.tag == "Rock")
+    public void SavePrefs()
+    {
+        foreach(var item in upgrades)
         {
-            collision.collider.gameObject.GetComponent<RockController>().hit(this);
+            for(int i = 0; i < 4; i++)
+            {
+
+            }
         }
+    }
+
+    public void LoadPrefs()
+    {
+
     }
 }
