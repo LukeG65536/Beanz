@@ -34,6 +34,8 @@ public class PlayerController : MonoBehaviour
                 Vector3 dir = cam.transform.GetChild(0).forward.normalized * rollSpeed / (rb.velocity.magnitude + 10f);
                 dir.y = 0;
                 if (Input.GetKey(KeyCode.Space)) /*rb.AddForce(Vector3.Scale(vel, cam.transform.GetChild(0).forward)*/ rb.AddForce(dir);
+
+                if (Input.GetKey(KeyCode.R)) transform.position = new Vector3(0,100,0);
                 if (dashCooldown >= 0)
                 {
                     dashCooldown -= Time.deltaTime;
@@ -53,6 +55,8 @@ public class PlayerController : MonoBehaviour
                 if (Input.GetKey(KeyCode.S)) vel.z = -speed;
                 if (Input.GetKey(KeyCode.A)) vel.x = -speed;
                 if (Input.GetKey(KeyCode.D)) vel.x = speed;
+                if (Input.GetKey(KeyCode.R)) transform.position = new Vector3();
+
                 if (Input.GetKey(KeyCode.Space) && grounded)
                 {
                     grounded = false;

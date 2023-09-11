@@ -153,8 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rock: {fileID: 4513270368461891381, guid: 18e914274247c5643b955969e759d91b, type: 3}
-  mapOffsetX: 0
-  mapOffsetY: 0
+  mapOffset: 100
 --- !u!4 &240336957
 Transform:
   m_ObjectHideFlags: 0

@@ -73,19 +73,25 @@ public class PlayerInv : MonoBehaviour
         }
     }
 
-    public void SavePrefs()
+    public void SaveUpgrades()
     {
         foreach(var item in upgrades)
         {
             for(int i = 0; i < 4; i++)
             {
-
+                PlayerPrefs.SetFloat(item.Key + i, (float)item.Value[i]);
             }
         }
     }
 
-    public void LoadPrefs()
+    public void Load()
     {
-
+        foreach(var item in upgrades)
+        {
+            for(int i = 0; i < 4; i++)
+            {
+                PlayerPrefs.GetFloat(item.Key + i);
+            }
+        }
     }
 }
