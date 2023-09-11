@@ -28,7 +28,7 @@ public class MineController : MonoBehaviour
             for (int j = 0; j < 20; j++)
             {
                 GameObject hhh = Instantiate(rock, transform.position + new Vector3(i,depth,j),Quaternion.identity); 
-                hhh.GetComponent<RockController>().localPos = new Vector3(i, depth, j);
+                hhh.GetComponent<RockController>().localPos = new Vector3(depth, i, j);
                 map[(int)depth, i + 100, j + 100] = 1;
             }
         }
@@ -64,8 +64,8 @@ public class MineController : MonoBehaviour
         {
             map[depth, x + 100, y + 100] = 1;
 
-            GameObject ff = Instantiate(rock, transform.position + new Vector3(x, depth, y), Quaternion.identity);
-            ff.GetComponent<RockController>().localPos = new Vector3(x, depth ,y);
+            GameObject ff = Instantiate(rock, transform.position + new Vector3(x, -depth, y), Quaternion.identity);
+            ff.GetComponent<RockController>().localPos = new Vector3(depth, x ,y);
         }
         catch
         {
