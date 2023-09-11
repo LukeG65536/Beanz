@@ -53,13 +53,13 @@ Material:
     - _QueueControl: 0
     - _RockTextureMulti: 0.178
     - _Scale: 0
-    - _SizeGradiant: 0.03
-    - _SnowMulti: 0.848
+    - _SizeGradiant: 0.02
+    - _SnowMulti: 0.84
     - _Surface: 0
-    - _TransitionHeight: -21.2
+    - _TransitionHeight: -25.3
     - _ZWrite: 1
     m_Colors:
-    - _RockMulti: {r: 0.2830189, g: 0.2830189, b: 0.2830189, a: 0}
+    - _RockMulti: {r: 0.3962264, g: 0.3962264, b: 0.3962264, a: 0}
     - _RockMultiplyer: {r: 0.21698111, g: 0.21698111, b: 0.21698111, a: 0}
     - _SnowColor: {r: 1, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []

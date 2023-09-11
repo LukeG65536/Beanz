@@ -8,6 +8,7 @@ public class RockController : MonoBehaviour
     public string type = "Rock Beans";
     public Material[] gems;
     public Material rock;
+    public Vector3 localPos;
 
     public void Start()
     {
@@ -23,8 +24,8 @@ public class RockController : MonoBehaviour
     public void hit(PlayerInv inv)
     {
         inv.backPack[type][0] += 1;
+        GameObject.FindGameObjectWithTag("Mine").GetComponent<MineController>().breakRock((int)localPos.x, (int)localPos.y, (int)localPos.z);
         StartCoroutine(breakRock());
-        Debug.Log("hi");
     }
 
     IEnumerator breakRock()
