@@ -41,6 +41,8 @@ public class PlayerInv : MonoBehaviour
         {
             buttons[obj.Key].text = obj.Key + ": " + Math.Round(obj.Value[2]).ToString();
         }*/
+        Load();
+
     }
     public void resetInv()
     {
@@ -66,6 +68,7 @@ public class PlayerInv : MonoBehaviour
             cash -= item[2];
             item[2] = item[2] * item[3];
             buttons[itemTag].text = itemTag + ": " + Math.Round(item[2]).ToString();
+            SaveUpgrades();
         }
         catch
         {
@@ -90,7 +93,7 @@ public class PlayerInv : MonoBehaviour
         {
             for(int i = 0; i < 4; i++)
             {
-                PlayerPrefs.GetFloat(item.Key + i);
+                upgrades[item.Key][i] = PlayerPrefs.GetFloat(item.Key + i);
             }
         }
     }
