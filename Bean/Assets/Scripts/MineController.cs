@@ -6,7 +6,8 @@ public class MineController : MonoBehaviour
 {
     public GameObject rock;
     public int[,,] map = new int[100, 200, 200]; //[layer,x,y]
-    public int mapOffset = 100;
+    GameObject[,,] rocks;
+    int mapOffset = 100;
     // Start is called before the first frame update
     void Start()
     {
