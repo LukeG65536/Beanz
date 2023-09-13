@@ -80,6 +80,7 @@ public class PlayerController : MonoBehaviour
     IEnumerator breakRock(GameObject obj)
     {
         yield return new WaitForSeconds(1);
-        Destroy(obj);
+        //Destroy(obj);
+        obj.SetActive(false);
     }
 }
