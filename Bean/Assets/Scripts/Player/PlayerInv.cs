@@ -41,11 +41,15 @@ public class PlayerInv : MonoBehaviour
         upgradesRebirth["Cash Multi"] = new double[] { 1, .35, 1, 1.2 }; /// {value of upgrade, increase in value, cost, cost increase}
         upgradesRebirth["Bean Multi"] = new double[] { 1, .50, 1, 1.5 };
         foreach (GameObject obj in GameObject.FindGameObjectsWithTag("Button")){ buttons[obj.GetComponent<ButtonManager>().index] = obj.transform.GetChild(0).GetComponent<TextMeshProUGUI>(); } ///Dont question it
-        /*foreach (var obj in upgrades)
+        foreach (var obj in upgrades)
         {
             buttons[obj.Key].text = obj.Key + ": " + Math.Round(obj.Value[2]).ToString();
-        }*/
+        }
         Load();
+        if (cash == 0)
+        {
+            cash = 120;
+        }
     }
     public void resetInv()
     {
