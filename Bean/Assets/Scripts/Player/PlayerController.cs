@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour
                     {
                         rb.velocity = new Vector3(0, rb.velocity.y, 0);
                         rb.AddForce(cam.transform.GetChild(0).forward.normalized * dashForce, ForceMode.Impulse);
-                        dashCooldown = 3;
+                        dashCooldown = 2;
                     }
                 }
                 break;

@@ -11,8 +11,10 @@ public class PlayerInv : MonoBehaviour
 {
     public Dictionary<string, int[]> backPack = new Dictionary<string, int[]>();
     public Dictionary<string, double[]> upgrades = new Dictionary<string, double[]>();
+    public Dictionary<string, double[]> upgradesRebirth = new Dictionary<string, double[]>();
     public Dictionary<string, TextMeshProUGUI> buttons = new Dictionary<string, TextMeshProUGUI>();    
     public double cash = 0;
+    public double cashR = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,13 +38,14 @@ public class PlayerInv : MonoBehaviour
 
         upgrades["Cash Multi"] = new double[] { 1, .35 , 20, 1.2 }; /// {value of upgrade, increase in value, cost, cost increase}
         upgrades["Bean Multi"] = new double[] { 1, .50, 100, 1.5 };
+        upgradesRebirth["Cash Multi"] = new double[] { 1, .35, 1, 1.2 }; /// {value of upgrade, increase in value, cost, cost increase}
+        upgradesRebirth["Bean Multi"] = new double[] { 1, .50, 1, 1.5 };
         foreach (GameObject obj in GameObject.FindGameObjectsWithTag("Button")){ buttons[obj.GetComponent<ButtonManager>().index] = obj.transform.GetChild(0).GetComponent<TextMeshProUGUI>(); } ///Dont question it
         /*foreach (var obj in upgrades)
         {
             buttons[obj.Key].text = obj.Key + ": " + Math.Round(obj.Value[2]).ToString();
         }*/
         Load();
-
     }
     public void resetInv()
     {
@@ -76,15 +79,40 @@ public class PlayerInv : MonoBehaviour
         }
     }
 
+    public void upgradeR(string itemTag)
+    {
+        try
+        {
+            double[] item = upgradesRebirth[itemTag];
+            if (cashR < item[2])
+            {
+                Debug.Log("U cant buy this yet");
+                return;
+            }
+
+            item[0] += item[1];
+            cash -= item[2];
+            item[2] = item[2] * item[3];
+            buttons[itemTag].text = itemTag + ": " + Math.Round(item[2]).ToString();
+            SaveUpgrades();
+        }
+        catch
+        {
+            Debug.Log("incorrect item tag");
+        }
+    }
+
     public void SaveUpgrades()
     {
-        foreach(var item in upgrades)
+        foreach(var item in upgradesRebirth)
         {
             for(int i = 0; i < 4; i++)
             {
                 PlayerPrefs.SetFloat(item.Key + i, (float)item.Value[i]);
             }
         }
+        PlayerPrefs.SetFloat("cash", (float)cash);
+        PlayerPrefs.SetFloat("cashR", (float)cashR);
     }
 
     public void Load()
@@ -96,5 +124,21 @@ public class PlayerInv : MonoBehaviour
                 upgrades[item.Key][i] = PlayerPrefs.GetFloat(item.Key + i);
             }
         }
+        cash = PlayerPrefs.GetFloat("cash");
+        cashR = PlayerPrefs.GetFloat("cashR");
+    }
+
+    public void Rebirth()
+    {
+        if(cash < 1000000)
+        {
+            return;
+        }
+        resetInv();
+        upgrades["Cash Multi"] = new double[] { 1, .35, 20, 1.2 }; /// {value of upgrade, increase in value, cost, cost increase}
+        upgrades["Bean Multi"] = new double[] { 1, .50, 100, 1.5 };
+        cashR += 10;
+        cash = 0;
+        SaveUpgrades();
     }
 }
