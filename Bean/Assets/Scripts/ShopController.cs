@@ -15,8 +15,9 @@ public class ShopController : MonoBehaviour
             {
                 moneyMade += item.Value[0] * item.Value[1];
             }
-            player.GetComponent<PlayerInv>().resetInv();
-            player.GetComponent<PlayerInv>().cash += moneyMade * player.GetComponent<PlayerInv>().upgrades["Cash Multi"][0] * player.GetComponent<PlayerInv>().upgrades["Bean Multi"][0];
+            PlayerInv inv = player.GetComponent<PlayerInv>();
+            inv.resetInv();
+            inv.cash += moneyMade * inv.upgrades["Cash Multi"][0] * inv.upgrades["Bean Multi"][0] * inv.upgradesRebirth["Cash Multi R"][0] * inv.upgradesRebirth["Bean Multi R"][0];
         }
     }
 }
