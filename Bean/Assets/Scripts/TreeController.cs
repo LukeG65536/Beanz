@@ -10,7 +10,12 @@ public class TreeController : MonoBehaviour
     public bool deepFry = false;
     public Material gold;
     public Material pure;
-    void Update()
+
+    private void Start()
+    {
+        
+    }
+    /*void Update()
     {
         lifeTime += Time.deltaTime * 5;
         if(20 >= lifeTime && lifeTime >= 10)
@@ -31,7 +36,7 @@ public class TreeController : MonoBehaviour
             treeState = 0;
             gameObject.transform.localScale = new Vector3();
         }
-    }
+    }*/
 
 
     private void OnTriggerEnter(Collider other)
