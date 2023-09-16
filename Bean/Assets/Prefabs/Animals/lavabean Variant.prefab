@@ -99,7 +99,7 @@ MonoBehaviour:
   health: 100
   player: {fileID: 0}
   hit: {fileID: 8863409357074535007, guid: 5542850d1546c2a40b94306d2dec4034, type: 3}
-  blood: {fileID: 7967745690241808104, guid: 31c17cf599e2dcb4f8cce8d0e8c695e4, type: 3}
+  blood: {fileID: 7967745690241808104, guid: 95d2306895c7a09499194e74843d161b, type: 3}
 --- !u!54 &600827293597881346
 Rigidbody:
   m_ObjectHideFlags: 0

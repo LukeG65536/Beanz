@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.38515973, g: 0.47249496, b: 0.61858815, a: 1}
+  m_IndirectSpecularColor: {r: 0.3851593, g: 0.4724939, b: 0.6185859, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9174,7 +9174,7 @@ MonoBehaviour:
   health: 100
   player: {fileID: 2120121403}
   hit: {fileID: 8863409357074535007, guid: 5542850d1546c2a40b94306d2dec4034, type: 3}
-  blood: {fileID: 7967745690241808104, guid: 31c17cf599e2dcb4f8cce8d0e8c695e4, type: 3}
+  blood: {fileID: 7967745690241808104, guid: 02885875b7fdc5c448b5c2944017a111, type: 3}
 --- !u!54 &926994044
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12965,7 +12965,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -14299,7 +14299,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -14742,7 +14742,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -17490,7 +17490,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -18963,7 +18963,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -21970,6 +21970,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3288776006100778317, guid: 64d6dd2d0aa6f2649a6aafe1d09a8046, type: 3}
+      propertyPath: blood
+      value: 
+      objectReference: {fileID: 7967745690241808104, guid: 95d2306895c7a09499194e74843d161b, type: 3}
     - target: {fileID: 3288776006100778317, guid: 64d6dd2d0aa6f2649a6aafe1d09a8046, type: 3}
       propertyPath: player
       value: 

@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2710012994580289825
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1399185781386956969, guid: 229be8e4bfab92547aa9cabe6ecc3b84, type: 3}
+      propertyPath: m_Name
+      value: Terrain Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 1834722427217445190, guid: 229be8e4bfab92547aa9cabe6ecc3b84, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1834722427217445190, guid: 229be8e4bfab92547aa9cabe6ecc3b84, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -514
+      objectReference: {fileID: 0}
+    - target: {fileID: 1834722427217445190, guid: 229be8e4bfab92547aa9cabe6ecc3b84, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1834722427217445190, guid: 229be8e4bfab92547aa9cabe6ecc3b84, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -479
+      objectReference: {fileID: 0}
+    - target: {fileID: 1834722427217445190, guid: 229be8e4bfab92547aa9cabe6ecc3b84, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1834722427217445190, guid: 229be8e4bfab92547aa9cabe6ecc3b84, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1834722427217445190, guid: 229be8e4bfab92547aa9cabe6ecc3b84, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1834722427217445190, guid: 229be8e4bfab92547aa9cabe6ecc3b84, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1834722427217445190, guid: 229be8e4bfab92547aa9cabe6ecc3b84, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1834722427217445190, guid: 229be8e4bfab92547aa9cabe6ecc3b84, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1834722427217445190, guid: 229be8e4bfab92547aa9cabe6ecc3b84, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5065356530750992699, guid: 229be8e4bfab92547aa9cabe6ecc3b84, type: 3}
+      propertyPath: m_DrawHeightmap
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5065356530750992699, guid: 229be8e4bfab92547aa9cabe6ecc3b84, type: 3}
+      propertyPath: m_DrawInstanced
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5065356530750992699, guid: 229be8e4bfab92547aa9cabe6ecc3b84, type: 3}
+      propertyPath: m_AllowAutoConnect
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5065356530750992699, guid: 229be8e4bfab92547aa9cabe6ecc3b84, type: 3}
+      propertyPath: m_MaterialTemplate
+      value: 
+      objectReference: {fileID: 2100000, guid: b9a2ed177ba316940b608077ee1cc6f5, type: 2}
+    - target: {fileID: 5065356530750992699, guid: 229be8e4bfab92547aa9cabe6ecc3b84, type: 3}
+      propertyPath: m_EnableHeightmapRayTracing
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 229be8e4bfab92547aa9cabe6ecc3b84, type: 3}
